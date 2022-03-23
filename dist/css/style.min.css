@@ -1,0 +1,153 @@
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Bold.woff2") format("woff2"), url("../fonts/CormorantUpright-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-Regular.woff2") format("woff2"), url("../fonts/CormorantUpright-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: CormorantUpright;
+  font-display: swap;
+  src: url("../fonts/CormorantUpright-SemiBold.woff2") format("woff2"), url("../fonts/CormorantUpright-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: TTTrailers;
+  font-display: swap;
+  src: url("../fonts/TTTrailers-Regular.woff2") format("woff2"), url("../fonts/TTTrailers-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+:root {
+  --body: rgba(255, 255, 255, 0.87);
+  --bg: #F3F5F7;
+  --hover: #c2c3c4;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  background: var(--body);
+}
+
+.list {
+  list-style: none;
+  border-radius: 5px;
+  width: 40%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: var(--bg);
+}
+.list-item:first-child {
+  cursor: default;
+  background-color: var(--bg);
+  font-size: 16px;
+}
+.list-item:first-child:hover {
+  background-color: transparent;
+}
+.list-item {
+  display: flex;
+  border-bottom: 2px solid var(--bg);
+  cursor: pointer;
+  background-color: var(--body);
+  border-radius: 5px;
+}
+.list-item:hover {
+  background-color: var(--hover);
+}
+.list-item div {
+  width: 33.33%;
+  font-weight: bold;
+  text-align: flex-start;
+  padding: 12px 10px;
+  font-size: 14px;
+  position: relative;
+}
+.list-item div:first-child {
+  border-left: none;
+}
+.list-item-item:last-child {
+  border-bottom: none;
+}
+.list-item:nth-child(even) {
+  background: var(--bg);
+}
+.list-item:nth-child(even):hover {
+  background-color: var(--hover);
+}
+.list-item__select {
+  background-color: var(--body);
+}
+.list-item__select div {
+  font-size: 12px;
+  font-weight: normal;
+  position: relative;
+}
+
+.up {
+  color: green;
+}
+
+.value,
+.percent {
+  display: flex;
+  justify-content: space-between;
+}
+
+.valute {
+  position: relative;
+  display: inline-block;
+}
+
+.list-item .tooltiptext {
+  display: none;
+  background-color: #e4e3e3;
+  color: black;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  font-size: 10px;
+}
+
+.list-item:hover .tooltiptext {
+  display: block;
+  opacity: 1;
+}
+
+.down {
+  color: red;
+}
+
+.sign {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.prev-date {
+  font-size: 9px;
+  padding-left: 10px;
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+}
+
+.active {
+  background-color: var(--bg);
+}
