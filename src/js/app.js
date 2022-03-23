@@ -1,6 +1,5 @@
 import * as flsFunctions from "./modules/functions.js";
 
-
 flsFunctions.isWebp();
 
 const DAILYURL = `https://www.cbr-xml-daily.ru/daily_json.js`;
