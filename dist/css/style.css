@@ -5,6 +5,7 @@
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: CormorantUpright;
   font-display: swap;
@@ -12,6 +13,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: CormorantUpright;
   font-display: swap;
@@ -19,6 +21,7 @@
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: TTTrailers;
   font-display: swap;
@@ -26,6 +29,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 :root {
   --body: rgba(255, 255, 255, 0.87);
   --bg: #F3F5F7;
@@ -46,24 +50,31 @@ body {
   padding: 10px;
   background-color: var(--bg);
 }
+
 .list-item:first-child {
   cursor: default;
   background-color: var(--bg);
   font-size: 16px;
 }
+
 .list-item:first-child:hover {
   background-color: transparent;
 }
+
 .list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 2px solid var(--bg);
   cursor: pointer;
   background-color: var(--body);
   border-radius: 5px;
 }
+
 .list-item:hover {
   background-color: var(--hover);
 }
+
 .list-item div {
   width: 33.33%;
   font-weight: bold;
@@ -72,21 +83,27 @@ body {
   font-size: 14px;
   position: relative;
 }
+
 .list-item div:first-child {
   border-left: none;
 }
+
 .list-item-item:last-child {
   border-bottom: none;
 }
+
 .list-item:nth-child(even) {
   background: var(--bg);
 }
+
 .list-item:nth-child(even):hover {
   background-color: var(--hover);
 }
+
 .list-item__select {
   background-color: var(--body);
 }
+
 .list-item__select div {
   font-size: 12px;
   font-weight: normal;
@@ -99,8 +116,12 @@ body {
 
 .value,
 .percent {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .valute {
@@ -132,8 +153,12 @@ body {
 
 .sign {
   font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hidden {
