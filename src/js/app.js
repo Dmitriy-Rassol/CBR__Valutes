@@ -111,11 +111,11 @@ function getMapDate(map, list) {
                         item.dataset.id = ID;
                         let percent = ((Previous / Value - 1) * 100).toFixed(2);
                         item.innerHTML = `
-                        <div class="valute">${CharCode} <span class="prev-date">${date}</span></div>
-                        <div class="value">${Value}<span class="sign"></span></div>
-                        <div class="percent">${percent}% <span class="sign ${dynamic}">${sign}</span></div>
-                        <span class="tooltiptext">${Name}</span>
-                        `;
+                    <div class="valute">${CharCode} <span class="prev-date"></span></div>
+                    <div class="value">${Value}<span class="sign"></span></div>
+                    <div class="percent">${percent}% <span class="sign ${dynamic}">${sign}</span></div>
+                    <span class="tooltiptext">${Name}</span>
+                    `;
                         list.insertAdjacentElement('afterend', item);
                         getTooltipCoursor(item);
 
